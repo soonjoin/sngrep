@@ -1,4 +1,8 @@
-# 注: osx 10.14 编译有问题，提示找不到ncurses menu library，10.14之前的版本编译正常，且编译好的二进制文件可以在10.14下运行。官网提示用macport安装ncurses库，未测试
+# 注: osx 10.14 下编译方法（使用brew安装的ncurses）
+    brew install ncurses
+    ./bootstrap.sh
+    ./configure LDFLAGS=-L/usr/local/opt/ncurses/lib
+    make
 
 # sngrep [![Build Status](https://travis-ci.org/irontec/sngrep.svg)](https://travis-ci.org/irontec/sngrep)
 
